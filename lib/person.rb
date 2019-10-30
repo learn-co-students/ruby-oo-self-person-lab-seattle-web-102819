@@ -1,15 +1,12 @@
 # your code goes here
 class Person
     attr_reader :name
-    attr_writer :bank_account, :happiness, :hygiene
+    attr_accessor :bank_account, :happiness, :hygiene
     def initialize(name)
         @name = name
         @happiness = 8
         @hygiene = 8
         @bank_account = 25
-    end
-    def bank_account
-        @bank_account
     end
     def happiness
         @happiness.clamp(0,10)
