@@ -1,9 +1,8 @@
-# your code goes here
-
 class Person
 
     attr_reader :name
-    attr_accessor :bank_account, :happiness, :hygiene
+    attr_writer :happiness, :hygiene
+    attr_accessor :bank_account
 
     def initialize(name) 
         @name = name
@@ -18,8 +17,7 @@ class Person
      end
 
      def happiness
-        @happiness.clamp(0, 10)
-       
+        @happiness.clamp(0, 10)      
      end 
 
      def hygiene
@@ -78,7 +76,6 @@ class Person
         else
             return "blah blah blah blah blah"
         end
-
      end 
 
 end 
