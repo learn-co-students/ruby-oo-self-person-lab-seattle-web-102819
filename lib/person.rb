@@ -24,19 +24,11 @@ class Person
     end
 
     def happy?
-        if happiness > 7
-            return true
-        else
-            return false
-        end
+        happiness > 7
     end
 
     def clean?
-        if hygiene > 7
-            return true
-        else
-            return false
-        end
+        hygiene > 7
     end
 
     def get_paid(salary)
