@@ -1,20 +1,7 @@
 class Person
     attr_accessor(:bank_account)
-    # def name=(name)
-    #   @name
-    # end
-    # def name
-    #   @name
-    # end
-
     attr_writer(:happiness, :hygiene)
-    # def name=(name)
-    #   @name = name
-    # end
     attr_reader(:name)
-    # def name
-    #   @name
-    # end
 
     def initialize(name)
         @name = name
