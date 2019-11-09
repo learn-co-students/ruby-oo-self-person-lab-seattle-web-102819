@@ -4,12 +4,9 @@ class Person
     # def name
     #     @name 
     # end
-    attr_writer :happiness, :hygiene
-    # def happiness= (happiness)
-    #     @happiness = happiness
-    # end
-    attr_accessor :bank_account
-     # def bank_account= (bank_account)
+
+    attr_accessor :happiness, :hygiene, :bank_account
+    # def bank_account= (bank_account)
     #     @bank_account = bank_account
     # end
 
@@ -18,16 +15,22 @@ class Person
     # end
 
     def initialize(name)
-        @name= name
-        @happiness= 8
-        @hygiene= 8
-        @bank_account= 25
+        @name = name
+        @happiness = 8
+        @hygiene = 8
+        @bank_account = 25
     end
 
     def happiness
         @happiness.clamp(0, 10)
     end
 
+    # def happiness=(num)
+    #     @happiness = num
+    #     @happiness = 10 if @happiness > 10
+    #     @happiness = 0 if @happiness < 0
+    #   end
+    
     def hygiene
         @hygiene.clamp(0, 10)
     end
